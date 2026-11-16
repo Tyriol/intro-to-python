@@ -7,7 +7,7 @@ def aFunction():
 def checkNumeric(value):
     '''check if the incoming arg val is a number
     if it is, return it, otherwise return 1 by default'''
-    if type(value) == int:
+    if type(value) in (int, float): # checking the type of something is in a tuple of allowed types (values)
         return value
     else:
         return None
